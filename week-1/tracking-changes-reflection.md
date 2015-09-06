@@ -13,7 +13,7 @@ Commit saves the untracked file that has been added. When committing, you type a
 stating the changes.
 
 
-**What are the best practices for commit messages
+**What are the best practices for commit messages**
 
 A good practice for commit messages is writing a present-tense message stating the exact change 
 to the file.
