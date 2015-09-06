@@ -1,5 +1,7 @@
 <h3>Wireframing</h3>
 
+![My site map](https://github.com/Awilda/phase-0/blob/wireframe/week-2/imgs/wireframe-index.png)
+
 **What is a wireframe?**
 
 A wireframe is your idea for your website's layout. Whether you're drawing it by paper or computer, you 
