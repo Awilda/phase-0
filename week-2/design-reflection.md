@@ -1,6 +1,6 @@
 <h3>Site Map Reflection</h3>
 
-![My site map](img/site-map.png)
+![My site map](https://github.com/Awilda/phase-0/blob/master/week-2/imgs/site-map.png)
 
 **What are the 6 Phases of Web Design?**
 
