@@ -1,6 +1,6 @@
 <h3>Wireframing</h3>
 
-![My site map](https://github.com/Awilda/phase-0/blob/wireframe/week-2/imgs/wireframe-index.png)
+![My site map](https://github.com/Awilda/phase-0/blob/master/week-2/imgs/wireframe-index.png)
 
 **What is a wireframe?**
 
