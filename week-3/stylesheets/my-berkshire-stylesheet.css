@@ -1,0 +1,151 @@
+html {
+  background-color: #ffffff;
+  color: #000080;
+}
+
+#name {
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+}
+
+h3 {
+	margin-bottom: 1px;
+	font-size: 18px;
+}
+
+span {
+	font-size: 2em;
+}
+
+span#inc {
+	font-size: 11px;
+}
+
+span#home-page{
+	font-size: 17px;
+}
+
+.address {
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+p#address {
+	font-size: .75em;
+	margin-top: 0em;
+}
+
+p#home-page {
+	margin-top: 0;
+}
+
+ul {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 10px;
+	
+}
+
+.links {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.links li a {
+	color: #800080;
+	margin-bottom: 5px;
+}
+
+.links li a:visited {
+	color: #ff0000;
+}
+
+p {
+	font-size: 8px;
+	margin-top: 0;
+}
+
+li {
+	margin-bottom: 25px;
+}
+
+span.updates {
+	font-size: 10px;
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p#geico-site {
+	font-size: 9px;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 1.5em;
+}
+
+p#contact-us {
+	font-size: 13px;
+	margin-top: 0;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+#legal-disclaimer {
+	padding-top: 0.50em;
+}
+
+#copyright {
+	font-size: 9px;
+	padding-top: 2em;
+}
+
+/*
+-What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It's important that we know how to type out the directory it's in.
+
+
+-What tricks did you use to help you with positioning? How hard was it to get the site as you
+wanted it?
+
+We used columns in CSS instead of using something like floats to then position. Columns made
+it so much simpler.
+
+
+-What CSS did you use to modify the element style (like size, color, etc.)
+
+For size we used 'font-size', for color we used 'color', for positioning and spacing we used
+'padding', 'border' and 'margin'.
+
+
+-Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you
+didn't, how would you know which one to add to your HTML?
+
+We didn't choose to include classes or ids in our html. Normally, classes would be used when we
+have a group of elements we want to stylize the same and ids for singular elements that stand on
+its own.
+
+
+-When you compared your site to the actual code base, which do you think had cleaner code that
+followed best practices and why?
+
+I think we had a good practice because we styled all of our html elements in a stylesheet versus
+inside of the html document. The issue with styling within the html is that if you have multiple
+pages, it will be extra work and will look cluttered.
+*/
+
+
+
