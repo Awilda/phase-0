@@ -1,0 +1,45 @@
+body {
+  font-family: 'Poiret One', cursive;
+}
+h1 {
+   text-align: center;
+
+}
+header {
+    background-color: #EEB4B4;
+    border-style: dotted;
+    border-color: #CDC9C9;
+    margin-bottom: 10px;
+}
+
+.column-1 {
+    float:left;
+    background-color: #CDC9C9;
+    width: 40%;
+    margin-left: 5%;
+    border-style: dotted;
+    border-color: #EE3B3B;
+    margin-bottom: 10px;
+    padding-left: 1%;
+      
+}
+.column-2{
+   float: right;
+   background-color: #ADD8E6;
+   width: 40%;
+   margin-right: 5%;
+   border-style: dotted;
+   border-color: #EEB4B4;
+   padding-right: 2%;
+}
+footer {
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-top: 10px;
+    background-color: #EE3B3B;
+    border-style: dotted;
+    border-color: #EEB4B4;
+    text-align: center;
+}
+
