@@ -1,26 +1,24 @@
-# Input: A string
-# Output: Groups of 4
+# Input: A string (name)
+# Output: Arrays in groups of 5 (accountability group)
+
 # Steps: 
 # 1. create a class
 # 2. define initialize method
 # 3. create a new array
-# 4. define the add_name method that calls one argument
-# 5. define a method sort_name to group them into 4
-# 6.
 
 # Add an new name to the list
-# Input: a string
+# Input: a string (name)
 # Output: a success message
 # Steps: 
 # 1. add name to array
 # 2. print a success message with name
 
-# Separate array into 3s
-# Input: array(inserted names)
-# Output: names grouped by 3
+# Put 5 members in a group
+# Input: array(list of names)
+# Output: array broken down by 5 people in each
 # Steps:
 # 1. iterate through array 
-# 2. cut by 3 
+# 2. cut of every 5th name
 
 class Account
 
