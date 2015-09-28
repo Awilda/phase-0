@@ -1,25 +1,27 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent [4] hours on this challenge.
 
 
 # Release 0: Pseudocode
 # Outline:
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  #
+  # add numbers to a variable 
+  # make numbers go at random
+  # add letters "B", "I", "N", "G", "O" to a variable
 
 # Check the called column for the number called.
-  #fill in the outline here
+  # create a column for each letter in the letter variable
 
 # If the number is in the column, replace with an 'x'
-  #fill in the outline here
+  # IF random number is in the column of the letter, replace the number with "X"
 
 # Display a column to the console
-  #fill in the outline here
+  # Print column with "X"
 
 # Display the board to the console (prettily)
-  #fill in the outline here
+  # Print out the board in groups of 5
 
 # Initial Solution
 
