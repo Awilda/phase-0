@@ -48,8 +48,5 @@ var me = {
 	age: 25,
 	favfoods: ["fries", "cereal", "chocolate"],
 	quirk: "I have a collection of guitar picks I randomly find"
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> 18fa80944c4085e638a7b61bd95dc45cf1b14176
+
