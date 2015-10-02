@@ -62,3 +62,11 @@ console.log(me.quirk);
 // => I have a collection of guitar picks I randomly find.
 
 
+// Favorite Food - console
+
+var favFood = prompt("What's your favorite food?", "");
+if (favFood === "fries"){
+    alert("Hey, that's my favorite food too!")
+} else {
+    alert("That's not my favorite food but good choice!")
+}
