@@ -10,6 +10,7 @@ var greeting = function(name){
 }
 
 console.log(greeting("Awilda"));
+//=> Hello, Awilda!
 
 
 
@@ -24,7 +25,7 @@ for (num=1; num <100; num++){
 		console.log("Buzz");
 	}
 }
-
+//=> 1, 2, Fizz, 4, Buzz...14, FizzBuzz...100
 
 
 // Functions
@@ -47,6 +48,17 @@ var me = {
 	name: "Awilda",
 	age: 25,
 	favfoods: ["fries", "cereal", "chocolate"],
-	quirk: "I have a collection of guitar picks I randomly find"
+	quirk: "I have a collection of guitar picks I randomly find."
 };
+console.log(me.name);
+//=> Awilda
+console.log(me.age);
+//=> 25 
+console.log(me.favfoods);
+//=> [ 'fries', 'cereal', 'chocolate' ]
+console.log(me.favfoods[2]);
+//=> chocolate
+console.log(me.quirk);
+// => I have a collection of guitar picks I randomly find.
+
 
