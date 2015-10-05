@@ -21,54 +21,38 @@
 
 // Initial Code
 
-var animals = ["rat", "snake", "horse", "pig", "dragon"];
+// var animals = ["rat", "snake", "horse", "pig", "dragon"];
 
-var randomPick = animals[Math.floor(Math.random() * animals.length)];
+// var randomPick = animals[Math.floor(Math.random() * animals.length)];
 
-var choice = function(input){
-        if (input === randomPick) {
-        return "You Win!";
-    }else {
-        return "You Lose!";
-    }
-};
-
-var fortune = function(choice){
-    if (choice === "rat"){
-            return "Fortune: A smile is your passport into the hearts of others.";
-    } else if (choice === "snake") {
-            return "Fortune: Your shoes will make you happy today.";
-    } else if (choice === "horse") { 
-            return "Fortune: If you refuse to accept anything but the best, you very often get it.";
-    } else if (choice === "pig") {
-            return "Fortune: A stranger, is a friend you have not spoken to yet.";
-    } else if (choice === "dragon") {
-            return "Fortune: You learn from your mistakes... You will learn a lot today.";
-    } else
-            return "Not a valid input";
-    };
-
-// var fortune = function(choice){
-//     switch(choice){
-//         case "rat": 
-//             return "Fortune: A smile is your passport into the hearts of others.";
-//         case "snake": 
-//             return "Fortune: Your shoes will make you happy today.";
-//         case "horse": 
-//             return "Fortune: If you refuse to accept anything but the best, you very often get it.";
-//         case "pig":
-//             return "Fortune: A stranger, is a friend you have not spoken to yet.";
-//         case "dragon":
-//             return "Fortune: You learn from your mistakes... You will learn a lot today.";
+// var choice = function(input){
+//         if (input === randomPick) {
+//         return "You Win!";
+//     }else {
+//         return "You Lose!";
 //     }
 // };
 
+// var fortune = function(choice){
+//     if (choice === "rat"){
+//             return "Fortune: A smile is your passport into the hearts of others.";
+//     } else if (choice === "snake") {
+//             return "Fortune: Your shoes will make you happy today.";
+//     } else if (choice === "horse") { 
+//             return "Fortune: If you refuse to accept anything but the best, you very often get it.";
+//     } else if (choice === "pig") {
+//             return "Fortune: A stranger, is a friend you have not spoken to yet.";
+//     } else if (choice === "dragon") {
+//             return "Fortune: You learn from your mistakes... You will learn a lot today.";
+//     } else
+//             return "Not a valid input";
+//     };
 
 
-console.log(animals);
-console.log(randomPick);
-console.log(choice("rat"));
-console.log(fortune("rat"));
+// console.log(animals);
+// console.log(randomPick);
+// console.log(choice("rat"));
+// console.log(fortune("rat"));
 
 
 
@@ -76,6 +60,54 @@ console.log(fortune("rat"));
 
 
 // Refactored Code
+
+var animals = function(name,fortune){
+    this.name = name;
+    this.fortune = fortune;
+};
+
+var rat = new animals("rat", "A smile is your passport into the hearts of others.");
+
+var snake = new animals("snake", "Your shoes will make you happy today.");
+
+var horse = new animals("horse", "If you refuse to accept anything but the best, you very often get it.");
+
+var pig = new animals("pig", "A stranger, is a friend you have not spoken to yet.");
+
+var dragon = new animals("dragon", "You learn from your mistakes... You will learn a lot today.");
+
+
+var arrayOfAnimals = [];
+arrayOfAnimals.push(rat.name);
+arrayOfAnimals.push(snake.name);
+arrayOfAnimals.push(horse.name);
+arrayOfAnimals.push(pig.name);
+arrayOfAnimals.push(dragon.name);
+
+
+var randomPick = arrayOfAnimals[Math.floor(Math.random() * arrayOfAnimals.length)];
+
+
+function choice(input){
+        if (input === randomPick && input === "rat") {
+        return "You Win! " + "Here's your fortune: " + rat.fortune;
+    } else if (input === randomPick && input === "snake") {
+        return "You Win! " + "Here's your fortune: " + snake.fortune;
+    } else if (input === randomPick && input === "horse") {
+        return "You Win! " + "Here's your fortune: " + horse.fortune;
+    } else if (input === randomPick && input === "pig") {
+        return "You Win! " + "Here's your fortune: " + pig.fortune;
+    } else if (input === randomPick && input === "dragon") {
+        return "You Win! " + "Here's your fortune: " + dragon.fortune;   
+    } else {
+        return "You Lose!";
+    }
+}
+
+
+console.log(arrayOfAnimals);
+console.log(randomPick);
+console.log(choice("rat"));
 
 
 
