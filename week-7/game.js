@@ -32,6 +32,24 @@
 //         return "You Lose!";
 //     }
 // };
+<<<<<<< HEAD
+=======
+
+// var fortune = function(choice){
+//     if (choice === "rat"){
+//             return "Fortune: A smile is your passport into the hearts of others.";
+//     } else if (choice === "snake") {
+//             return "Fortune: Your shoes will make you happy today.";
+//     } else if (choice === "horse") { 
+//             return "Fortune: If you refuse to accept anything but the best, you very often get it.";
+//     } else if (choice === "pig") {
+//             return "Fortune: A stranger, is a friend you have not spoken to yet.";
+//     } else if (choice === "dragon") {
+//             return "Fortune: You learn from your mistakes... You will learn a lot today.";
+//     } else
+//             return "Not a valid input";
+//     };
+>>>>>>> 79b1fd9afb38418d94f7094ec472c65fd4fa1ab7
 
 // var fortune = function(choice){
 //     if (choice === "rat"){
@@ -49,6 +67,10 @@
 //     };
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79b1fd9afb38418d94f7094ec472c65fd4fa1ab7
 // console.log(animals);
 // console.log(randomPick);
 // console.log(choice("rat"));
@@ -60,6 +82,7 @@
 
 
 // Refactored Code
+
 
 var animals = function(name,fortune){
     this.name = name;
@@ -99,16 +122,11 @@ function choice(input){
         return "You Win! " + "Here's your fortune: " + pig.fortune;
     } else if (input === randomPick && input === "dragon") {
         return "You Win! " + "Here's your fortune: " + dragon.fortune;   
-    } else {
-        return "You Lose!";
-    }
-}
 
 
 console.log(arrayOfAnimals);
 console.log(randomPick);
 console.log(choice("rat"));
-
 
 
 
