@@ -38,7 +38,9 @@ Reflection
 **What are databases for?**
 Databases allow one to store data which can later be retrieved.
 
+
 **What is a one-to-many relationship?**
+One-to-many relationships is when there are other table linked to the primary link. You can have basic information on the main table and have additional data in the other tables that pertain to main one.
 
 
 **What is a primary key? What is a foreign key? How can you determine which is which?**
