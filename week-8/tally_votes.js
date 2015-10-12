@@ -54,103 +54,103 @@ voteCount would be ...
 
 
 /* Once the votes have been tallied, assign each officer position the name of the
-student who received the most votes. */
-var officers = {
-  president: undefined,
-  vicePresident: undefined,
-  secretary: undefined,
-  treasurer: undefined
-}
+// student who received the most votes. */
+// var officers = {
+//   president: undefined,
+//   vicePresident: undefined,
+//   secretary: undefined,
+//   treasurer: undefined
+// }
 
-// Pseudocode
+// // Pseudocode
 
 
-// __________________________________________
-// Initial Solution
+// // __________________________________________
+// // Initial Solution
 
-function office(){
-var count = 0;
+// function office(){
+// var count = 0;
 
-for (var voteCount in votes) {
-   if (votes.hasOwnProperty(voteCount)) {
-       var officers = votes[voteCount];
-        for (var position in officers) {
-          for (var i=0; i<1; i++){
-            if (position=="president"){
-              pres.push(officers[position]);
-            }else if (position=="vicePresident"){
-              vp.push(officers[position]);
-            }else if (position=="secretary"){
-              sec.push(officers[position]);
-            }else if (position=="treasurer"){
-              tres.push(officers[position]);
-            }
-            }
-          }
-       }
+// for (var voteCount in votes) {
+//    if (votes.hasOwnProperty(voteCount)) {
+//        var officers = votes[voteCount];
+//         for (var position in officers) {
+//           for (var i=0; i<1; i++){
+//             if (position=="president"){
+//               pres.push(officers[position]);
+//             }else if (position=="vicePresident"){
+//               vp.push(officers[position]);
+//             }else if (position=="secretary"){
+//               sec.push(officers[position]);
+//             }else if (position=="treasurer"){
+//               tres.push(officers[position]);
+//             }
+//             }
+//           }
+//        }
     
-}
+// }
 
 
 
 
-var pres = [];
-var vp =[];
-var sec =[];
-var tres=[];
+// var pres = [];
+// var vp =[];
+// var sec =[];
+// var tres=[];
 
-office();
-
-
-
-var presCount = { };
-for (var i=0, j = pres.length; i< j; i++) {
-  presCount[pres[i]] = (presCount[pres[i]] || 0) +1;
-}
-
-var vpCount = { };
-for (var i=0, j = vp.length; i< j; i++) {
-  vpCount[vp[i]] = (vpCount[vp[i]] || 0) +1;
-}
-
-var secCount = { };
-for (var i=0, j = sec.length; i< j; i++) {
-  secCount[sec[i]] = (secCount[sec[i]] || 0) +1;
-}
-
-var tresCount = { };
-for (var i=0, j = tres.length; i< j; i++) {
-  tresCount[tres[i]] = (tresCount[tres[i]] || 0) +1;
-}
+// office();
 
 
 
-var pKeysSorted = Object.keys(presCount).sort(function(a,b){return presCount[a]-presCount[b]})
+// var presCount = { };
+// for (var i=0, j = pres.length; i< j; i++) {
+//   presCount[pres[i]] = (presCount[pres[i]] || 0) +1;
+// }
+
+// var vpCount = { };
+// for (var i=0, j = vp.length; i< j; i++) {
+//   vpCount[vp[i]] = (vpCount[vp[i]] || 0) +1;
+// }
+
+// var secCount = { };
+// for (var i=0, j = sec.length; i< j; i++) {
+//   secCount[sec[i]] = (secCount[sec[i]] || 0) +1;
+// }
+
+// var tresCount = { };
+// for (var i=0, j = tres.length; i< j; i++) {
+//   tresCount[tres[i]] = (tresCount[tres[i]] || 0) +1;
+// }
 
 
-var vpKeysSorted = Object.keys(vpCount).sort(function(a,b){return vpCount[a]-vpCount[b]})
+
+// var pKeysSorted = Object.keys(presCount).sort(function(a,b){return presCount[a]-presCount[b]})
 
 
-// console.log(secCount)
-var secKeysSorted = Object.keys(secCount).sort(function(a,b){return secCount[a]-secCount[b]})
+// var vpKeysSorted = Object.keys(vpCount).sort(function(a,b){return vpCount[a]-vpCount[b]})
 
 
-var tresKeysSorted = Object.keys(tresCount).sort(function(a,b){return tresCount[a]-tresCount[b]})
+// // console.log(secCount)
+// var secKeysSorted = Object.keys(secCount).sort(function(a,b){return secCount[a]-secCount[b]})
+
+
+// var tresKeysSorted = Object.keys(tresCount).sort(function(a,b){return tresCount[a]-tresCount[b]})
 
 
 
-voteCount.president=presCount
-voteCount.vicePresident=vpCount
-voteCount.secretary=secCount
-voteCount.treasurer=tresCount
+// voteCount.president=presCount
+// voteCount.vicePresident=vpCount
+// voteCount.secretary=secCount
+// voteCount.treasurer=tresCount
 
-officers.president=pKeysSorted.pop()
-officers.vicePresident=vpKeysSorted.pop()
-officers.secretary=secKeysSorted.pop()
-officers.treasurer=tresKeysSorted.pop()
+// officers.president=pKeysSorted.pop()
+// officers.vicePresident=vpKeysSorted.pop()
+// officers.secretary=secKeysSorted.pop()
+// officers.treasurer=tresKeysSorted.pop()
 
-console.log(voteCount)
-console.log(officers)
+// console.log(voteCount)
+// console.log(officers)
 
 
 
@@ -160,7 +160,39 @@ console.log(officers)
 // __________________________________________
 // Refactored Solution
 
+for(var voter in votes){
 
+  if(votes.hasOwnProperty(voter)){
+    var list = votes[voter];
+
+    for(var position in list){
+       if (voteCount[position][list[position]] == undefined){
+      voteCount[position][list[position]] = 1
+       }
+      else {
+         voteCount[position][list[position]] += 1
+       }
+
+     }
+    }
+}
+
+for(var position in officers){
+  var votedPosition = voteCount[position];
+  var highestCount = 0;
+
+  for(var winner in votedPosition){
+    var count = votedPosition[winner];
+
+    if (count > highestCount){
+      officers[position] = winner;
+      highestCount = count;
+    }
+  }
+ }
+
+console.log(voteCount)
+console.log(officers)
 
 
 
