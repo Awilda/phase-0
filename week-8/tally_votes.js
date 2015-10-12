@@ -88,7 +88,7 @@ for (var voteCount in votes) {
             }
           }
        }
-    }
+    
 }
 
 
@@ -169,10 +169,16 @@ console.log(officers)
 // Reflection
 
 // What did you learn about iterating over nested objects in JavaScript?
+// Using 'for...in' allows you to go one level in the nested objects.
+
 // Were you able to find useful methods to help you with this?
+// Unfortunately, I lost my refactored solution that I was almost finished with. Helpful
+// methods were forEach, reduce and Math max.
+
 // What concepts were solidified in the process of working through this challenge?
-
-
+// I struggled with this challenge. I had my own ideas at first but then learned about
+// new ways of tackling the challenge. I went around in circles that I needed to start again
+// on a clean slate and by then I had already wasted so much time.
 
 
 // __________________________________________
